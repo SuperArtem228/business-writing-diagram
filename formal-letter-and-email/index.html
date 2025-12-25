@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Writing Guide - Official Letters & Emails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-content">
+            <span class="nav-logo">📝 Business Writing Guide</span>
+            <div class="nav-links">
+                <a href="#diagram">Diagram</a>
+                <a href="#letter">Official Letter</a>
+                <a href="#email">Business Email</a>
+                <a href="#culture">Cross-Cultural</a>
+            </div>
+            <div class="nav-tools">
+                <button id="screenshot-toggle" class="btn-secondary">📸 Screenshot Mode</button>
+                <button id="print-btn" class="btn-secondary">🖨️ Print / Save PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <h1>Professional Business Writing Guide</h1>
+        <p>Master official letters and business emails with cross-cultural awareness</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Diagram Section -->
+        <section id="diagram" class="section">
+            <h2>📊 Complete Writing Workflow</h2>
+            <div class="diagram-controls">
+                <button id="copy-mermaid" class="btn-primary">📋 Copy Mermaid Code</button>
+                <button id="download-svg" class="btn-primary">⬇️ Download SVG</button>
+            </div>
+            <div class="diagram-wrapper">
+                <pre class="mermaid" id="main-diagram">
+flowchart LR
+    Start([Start Writing]):::start
+    
+    %% Decision
+    Start --> Decision{What are<br/>you writing?}
+    
+    %% Official Letter Path - Row 1 (Header)
+    Decision -->|Official<br/>Letter| L1[Sender<br/>Address]:::letter
+    L1 --> L2[Date]:::letter
+    L2 --> L3[Recipient<br/>Address]:::letter
+    L3 --> L4[Salutation]:::letter
+    
+    %% Official Letter Path - Row 2 (Content)
+    L4 --> L5[Subject Line]:::important
+    L5 --> L6[Opening<br/>Paragraph]:::letter
+    L6 --> L7[Body<br/>Paragraphs]:::letter
+    L7 --> L8[Closing]:::letter
+    L8 --> L9[Signature<br/>Block]:::letter
+    
+    %% Business Email Path - Row 1 (Top)
+    Decision -->|Business<br/>Email| E1[Subject<br/>Line]:::important
+    E1 --> E2[Professional<br/>Greeting]:::email
+    E2 --> E3[Context]:::email
+    
+    %% Business Email Path - Row 2 (Message)
+    E3 --> E4[Clear<br/>Request]:::important
+    E4 --> E5[Supporting<br/>Details]:::email
+    E5 --> E6[Call to<br/>Action]:::email
+    E6 --> E7[Polite<br/>Closing]:::email
+    E7 --> E8[Signature]:::email
+    
+    %% Convergence to Cross-Cultural Check
+    L9 --> Check[Cross-Cultural<br/>Review]:::culture
+    E8 --> Check
+    
+    %% Cross-Cultural Checks
+    Check --> C1[Check<br/>Directness]:::culture
+    C1 --> C2[Power<br/>Distance]:::culture
+    C2 --> C3[Time<br/>Orientation]:::culture
+    C3 --> C4[Relationship<br/>vs Task]:::culture
+    
+    C4 --> Final[✓ Send]:::success
+    
+    classDef start fill:#e0e7ff,stroke:#6366f1,stroke-width:2px
+    classDef letter fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+    classDef email fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+    classDef important fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    classDef culture fill:#fce7f3,stroke:#ec4899,stroke-width:2px
+    classDef warning fill:#fed7aa,stroke:#f97316,stroke-width:2px
+    classDef success fill:#86efac,stroke:#16a34a,stroke-width:3px
+                </pre>
+            </div>
+        </section>
+
+        <!-- Official Letter Section -->
+        <section id="letter" class="section">
+            <h2>✉️ Official Formal Letter</h2>
+            
+            <div class="card">
+                <h3>Step-by-Step Algorithm</h3>
+                <ol class="steps">
+                    <li><strong>Prepare sender details:</strong> Your full address in the top-left corner</li>
+                    <li><strong>Add date:</strong> Write the full date (e.g., December 25, 2025)</li>
+                    <li><strong>Add recipient details:</strong> Name, title, organization, and address</li>
+                    <li><strong>Write salutation:</strong> "Dear Mr./Ms. [Last Name]," or "Dear Sir/Madam,"</li>
+                    <li><strong>State purpose clearly:</strong> Subject line or first sentence explains why you're writing</li>
+                    <li><strong>Develop body paragraphs:</strong> Provide details, context, and supporting information</li>
+                    <li><strong>Request action:</strong> Clearly state what you need the recipient to do</li>
+                    <li><strong>Close professionally:</strong> "Yours sincerely," (if name known) or "Yours faithfully," (if not)</li>
+                    <li><strong>Sign and print name:</strong> Leave space for signature, then type your full name</li>
+                    <li><strong>Proofread:</strong> Check grammar, spelling, and tone before sending</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <button class="accordion-btn">✅ Do's and ❌ Don'ts</button>
+                <div class="accordion-content">
+                    <div class="two-column">
+                        <div class="do-list">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use formal language throughout</li>
+                                <li>Keep paragraphs short and focused</li>
+                                <li>Use full sentences and proper grammar</li>
+                                <li>Include all required address blocks</li>
+                                <li>Be polite but direct about your request</li>
+                                <li>Proofread multiple times</li>
+                                <li>Use company letterhead if available</li>
+                            </ul>
+                        </div>
+                        <div class="dont-list">
+                            <h4>❌ Don't</h4>
+                            <ul>
+                                <li>Use informal language or slang</li>
+                                <li>Write overly long paragraphs</li>
+                                <li>Use abbreviations or emojis</li>
+                                <li>Forget the date or recipient address</li>
+                                <li>Be vague about what you need</li>
+                                <li>Use colored fonts or fancy formatting</li>
+                                <li>Skip the formal closing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <button class="accordion-btn">📋 Essential Checklist</button>
+                <div class="accordion-content">
+                    <div class="checklist">
+                        <label><input type="checkbox"> Sender's full address included</label>
+                        <label><input type="checkbox"> Date is complete and properly formatted</label>
+                        <label><input type="checkbox"> Recipient's name, title, and address are correct</label>
+                        <label><input type="checkbox"> Appropriate salutation used</label>
+                        <label><input type="checkbox"> Subject or purpose stated in first paragraph</label>
+                        <label><input type="checkbox"> Body provides sufficient detail</label>
+                        <label><input type="checkbox"> Call to action is clear</label>
+                        <label><input type="checkbox"> Professional closing phrase used</label>
+                        <label><input type="checkbox"> Space left for signature</label>
+                        <label><input type="checkbox"> Typed name below signature line</label>
+                        <label><input type="checkbox"> Proofread for errors</label>
+                        <label><input type="checkbox"> Tone is appropriate for recipient's culture</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples">
+                <div class="example-card">
+                    <h3>Example 1: Request for Information</h3>
+                    <div class="code-block">
+                        <button class="copy-btn" data-target="letter-ex1">Copy</button>
+                        <pre id="letter-ex1">John Smith
+Marketing Manager
+Tech Solutions Inc.
+123 Business Avenue
+London, SW1A 1AA
+United Kingdom
+
+December 25, 2025
+
+Dr. Sarah Johnson
+Director of Research
+Innovation Labs Ltd.
+456 Research Park
+Cambridge, CB2 1TN
+United Kingdom
+
+Dear Dr. Johnson,
+
+Subject: Request for Partnership Information and Research Collaboration Opportunities
+
+I am writing on behalf of Tech Solutions Inc. to express our interest in exploring potential research collaboration opportunities with Innovation Labs Ltd. We have been following your groundbreaking work in artificial intelligence and believe there may be significant synergies between our organizations.
+
+Our company specializes in developing commercial applications for emerging technologies, and we are particularly interested in your recent publication on machine learning optimization techniques. We believe that a partnership between our organizations could accelerate the development of practical solutions for the healthcare industry.
+
+Would it be possible to arrange a meeting to discuss potential collaboration opportunities? We would be grateful for any information you could provide about your partnership programs and current research priorities. I am available to meet at your convenience and would be happy to visit your facility in Cambridge.
+
+I have attached our company profile and a preliminary proposal outline for your consideration. Please feel free to contact me if you require any additional information.
+
+Thank you for considering our request. I look forward to hearing from you.
+
+Yours sincerely,
+
+[Signature]
+
+John Smith
+Marketing Manager
+Tech Solutions Inc.
+Email: j.smith@techsolutions.com
+Phone: +44 20 1234 5678
+
+Enclosures: Company Profile, Proposal Outline</pre>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Example 2: Complaint / Escalation</h3>
+                    <div class="code-block">
+                        <button class="copy-btn" data-target="letter-ex2">Copy</button>
+                        <pre id="letter-ex2">Emily Chen
+Operations Director
+Global Trade Partners
+789 Commerce Street
+Singapore 018956
+
+December 25, 2025
+
+Mr. Robert Williams
+Customer Service Manager
+Logistics Express International
+321 Shipping Lane
+Rotterdam, 3011 AD
+Netherlands
+
+Dear Mr. Williams,
+
+Subject: Formal Complaint Regarding Delayed Shipment (Order #LE-2025-8934)
+
+I am writing to formally express our serious concern regarding the significant delays in the delivery of our order #LE-2025-8934, which was scheduled to arrive on December 10, 2025, but remains undelivered as of today.
+
+Despite multiple follow-up emails and phone calls to your customer service department over the past two weeks, we have received inconsistent information and no satisfactory resolution. This delay has caused substantial disruption to our operations and has affected our ability to fulfill commitments to our own clients.
+
+The shipment contains critical components required for our manufacturing process, and the continued delay is resulting in measurable financial losses. We have been loyal customers of Logistics Express International for five years and have always received excellent service, which makes this situation particularly disappointing.
+
+We require the following immediate actions:
+1. Confirmation of the current location and status of our shipment
+2. A guaranteed delivery date within the next 48 hours
+3. A detailed explanation of the cause of the delay
+4. Compensation for the disruption caused, as outlined in our service agreement
+
+We expect a comprehensive written response within 24 hours. If we do not receive a satisfactory resolution by December 27, 2025, we will have no choice but to escalate this matter to senior management and consider alternative logistics providers for future shipments.
+
+We value our business relationship and hope this matter can be resolved promptly and professionally.
+
+Yours sincerely,
+
+[Signature]
+
+Emily Chen
+Operations Director
+Global Trade Partners
+Email: e.chen@globaltrade.com
+Phone: +65 6234 5678
+
+CC: Customer Relations Director, Logistics Express International</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Email Section -->
+        <section id="email" class="section">
+            <h2>📧 Business Email</h2>
+            
+            <div class="card">
+                <h3>Step-by-Step Algorithm</h3>
+                <ol class="steps">
+                    <li><strong>Write clear subject line:</strong> Specific, concise, action-oriented (max 60 characters)</li>
+                    <li><strong>Choose appropriate greeting:</strong> Match formality to relationship and culture</li>
+                    <li><strong>Provide context:</strong> Briefly remind the recipient who you are if needed</li>
+                    <li><strong>State purpose immediately:</strong> Get to the point in the first two sentences</li>
+                    <li><strong>Provide necessary details:</strong> Include relevant information, but keep it concise</li>
+                    <li><strong>Make clear request:</strong> Specify exactly what action you need and when</li>
+                    <li><strong>Include call to action:</strong> Make it easy for the recipient to respond</li>
+                    <li><strong>Close politely:</strong> Thank them and use appropriate closing phrase</li>
+                    <li><strong>Add professional signature:</strong> Include full name, title, contact details</li>
+                    <li><strong>Review before sending:</strong> Check tone, clarity, and attachments</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <button class="accordion-btn">✅ Do's and ❌ Don'ts</button>
+                <div class="accordion-content">
+                    <div class="two-column">
+                        <div class="do-list">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use a clear, descriptive subject line</li>
+                                <li>Get to the point quickly</li>
+                                <li>Use short paragraphs (2-3 sentences)</li>
+                                <li>Include specific deadlines or dates</li>
+                                <li>Use bullet points for clarity</li>
+                                <li>Proofread before hitting send</li>
+                                <li>Reply within 24-48 hours</li>
+                                <li>Use "Reply All" judiciously</li>
+                            </ul>
+                        </div>
+                        <div class="dont-list">
+                            <h4>❌ Don't</h4>
+                            <ul>
+                                <li>Write vague subject lines like "Question"</li>
+                                <li>Bury your request in long paragraphs</li>
+                                <li>Use all caps or excessive punctuation!!!</li>
+                                <li>Send emails when emotional</li>
+                                <li>Forget to attach mentioned files</li>
+                                <li>Use informal language with superiors</li>
+                                <li>CC everyone unnecessarily</li>
+                                <li>Write emails longer than 200 words</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <button class="accordion-btn">📋 Essential Checklist</button>
+                <div class="accordion-content">
+                    <div class="checklist">
+                        <label><input type="checkbox"> Subject line is specific and clear</label>
+                        <label><input type="checkbox"> Greeting matches relationship formality</label>
+                        <label><input type="checkbox"> Purpose stated in first paragraph</label>
+                        <label><input type="checkbox"> Email is concise (under 200 words if possible)</label>
+                        <label><input type="checkbox"> Request is specific and actionable</label>
+                        <label><input type="checkbox"> Deadline or timeframe mentioned</label>
+                        <label><input type="checkbox"> Tone is professional and polite</label>
+                        <label><input type="checkbox"> Proper closing phrase used</label>
+                        <label><input type="checkbox"> Professional signature included</label>
+                        <label><input type="checkbox"> Mentioned attachments are actually attached</label>
+                        <label><input type="checkbox"> Checked for spelling and grammar</label>
+                        <label><input type="checkbox"> Appropriate recipients in To/CC/BCC</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples">
+                <div class="example-card">
+                    <h3>Example 1: Request for Information</h3>
+                    <div class="code-block">
+                        <button class="copy-btn" data-target="email-ex1">Copy</button>
+                        <pre id="email-ex1">Subject: Request for Q1 2026 Marketing Budget Guidelines
+
+Dear Ms. Anderson,
+
+I hope this email finds you well. I am currently preparing the marketing department's budget proposal for Q1 2026 and need clarification on the updated guidelines.
+
+Could you please provide the following information:
+• The maximum percentage increase allowed compared to Q4 2025
+• New approval requirements for digital advertising expenses
+• Timeline for budget submission and review
+
+I would appreciate receiving this information by January 5, 2026, to ensure our proposal meets the deadline. If you need any additional details about our planned initiatives, I'm happy to provide them.
+
+Thank you for your assistance.
+
+Best regards,
+Michael Torres
+Digital Marketing Manager
+Global Brands Inc.
+m.torres@globalbrands.com
++1 (555) 123-4567</pre>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Example 2: Complaint / Escalation</h3>
+                    <div class="code-block">
+                        <button class="copy-btn" data-target="email-ex2">Copy</button>
+                        <pre id="email-ex2">Subject: Urgent: Unresolved Software License Issue (Ticket #45892)
+
+Dear Mr. Peterson,
+
+I am writing to escalate an ongoing issue with our software licenses that has remained unresolved for three weeks despite multiple support tickets.
+
+The situation:
+• Our team of 50 users lost access to the platform on December 1, 2025
+• Initial ticket #45892 was submitted the same day
+• We have followed up six times with no resolution
+• Our productivity has been significantly impacted
+
+This issue is affecting critical business operations, and we need immediate attention. We have been a premium subscriber for four years and have always received prompt support, so this delay is both unexpected and concerning.
+
+I respectfully request:
+1. Immediate restoration of access for all 50 users
+2. A detailed explanation of what caused this issue
+3. Assurance that this will not recur
+4. Consideration of service credit for the disruption
+
+I would appreciate a response by end of day December 26, 2025. If we cannot resolve this matter promptly, I will need to discuss our options with senior management, including potentially exploring alternative solutions.
+
+I am available for a call at your earliest convenience to discuss this matter.
+
+Thank you for your urgent attention to this issue.
+
+Kind regards,
+Jennifer Liu
+IT Director
+Enterprise Solutions Corp.
+j.liu@enterprisesolutions.com
++44 20 7123 4567
+
+CC: Customer Success Manager, Account Executive</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cross-Cultural Section -->
+        <section id="culture" class="section">
+            <h2>🌍 Cross-Cultural Communication Tips</h2>
+            
+            <div class="card">
+                <h3>Key Cultural Dimensions</h3>
+                <div class="culture-grid">
+                    <div class="culture-card">
+                        <h4>💬 Directness</h4>
+                        <p><strong>Low Context (Direct):</strong> US, Germany, Netherlands — Get straight to the point, explicit language</p>
+                        <p><strong>High Context (Indirect):</strong> Japan, China, Middle East — Build rapport first, implied meaning</p>
+                        <div class="adaptation">
+                            <strong>Adapt:</strong> For high-context cultures, add more relationship-building language and soften requests with phrases like "Would it be possible..." or "We would appreciate if..."
+                        </div>
+                    </div>
+                    
+                    <div class="culture-card">
+                        <h4>👔 Power Distance</h4>
+                        <p><strong>Low:</strong> Scandinavia, Australia — Informal, egalitarian communication</p>
+                        <p><strong>High:</strong> India, Mexico, Philippines — Formal titles, respect hierarchy</p>
+                        <div class="adaptation">
+                            <strong>Adapt:</strong> Use formal titles (Dr., Professor, Director) in high power distance cultures. Avoid first names unless invited. Show deference to seniority.
+                        </div>
+                    </div>
+                    
+                    <div class="culture-card">
+                        <h4>⏰ Time Orientation</h4>
+                        <p><strong>Monochronic:</strong> Switzerland, Japan — Punctual, deadline-focused, linear</p>
+                        <p><strong>Polychronic:</strong> Latin America, Middle East — Flexible, relationship-priority</p>
+                        <div class="adaptation">
+                            <strong>Adapt:</strong> For monochronic cultures, be very specific about deadlines. For polychronic cultures, build in buffer time and emphasize relationship over speed.
+                        </div>
+                    </div>
+                    
+                    <div class="culture-card">
+                        <h4>🤝 Relationship vs Task</h4>
+                        <p><strong>Task-Oriented:</strong> US, UK, Germany — Business first, efficiency matters</p>
+                        <p><strong>Relationship-Oriented:</strong> China, Brazil, Middle East — Trust before business</p>
+                        <div class="adaptation">
+                            <strong>Adapt:</strong> For relationship-oriented cultures, include personal inquiries, acknowledge past interactions, and don't rush to business. Start with "I hope you are well" and mention previous meetings.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎚️ Tone Adapter</h3>
+                <p class="subtitle">Adjust your phrasing based on cultural preferences:</p>
+                <div class="tone-slider-container">
+                    <label for="tone-slider">Communication Style:</label>
+                    <div class="slider-wrapper">
+                        <span class="slider-label">Direct</span>
+                        <input type="range" id="tone-slider" min="0" max="2" value="1" step="1">
+                        <span class="slider-label">Softer</span>
+                    </div>
+                </div>
+                <div class="tone-examples">
+                    <div class="tone-example-row">
+                        <div class="label">Opening:</div>
+                        <div class="phrase" id="opening-phrase">I hope this email finds you well.</div>
+                    </div>
+                    <div class="tone-example-row">
+                        <div class="label">Request:</div>
+                        <div class="phrase" id="request-phrase">Could you please send the report by Friday?</div>
+                    </div>
+                    <div class="tone-example-row">
+                        <div class="label">Deadline:</div>
+                        <div class="phrase" id="deadline-phrase">The deadline is January 15.</div>
+                    </div>
+                    <div class="tone-example-row">
+                        <div class="label">Closing:</div>
+                        <div class="phrase" id="closing-phrase">Thank you for your assistance.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📝 Quick Templates</h3>
+                <div class="templates-grid">
+                    <div class="template-card">
+                        <h4>Opening Lines</h4>
+                        <div class="template-item">
+                            <code>I hope this email finds you well.</code>
+                            <button class="copy-small" data-copy="I hope this email finds you well.">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>Thank you for your email dated [date].</code>
+                            <button class="copy-small" data-copy="Thank you for your email dated [date].">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>I am writing to inquire about...</code>
+                            <button class="copy-small" data-copy="I am writing to inquire about...">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>Further to our conversation on [date]...</code>
+                            <button class="copy-small" data-copy="Further to our conversation on [date]...">Copy</button>
+                        </div>
+                    </div>
+                    
+                    <div class="template-card">
+                        <h4>Making Requests</h4>
+                        <div class="template-item">
+                            <code>Would it be possible to...?</code>
+                            <button class="copy-small" data-copy="Would it be possible to...?">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>I would appreciate if you could...</code>
+                            <button class="copy-small" data-copy="I would appreciate if you could...">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>Could you please provide...?</code>
+                            <button class="copy-small" data-copy="Could you please provide...?">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>I would be grateful if you could...</code>
+                            <button class="copy-small" data-copy="I would be grateful if you could...">Copy</button>
+                        </div>
+                    </div>
+                    
+                    <div class="template-card">
+                        <h4>Closing Lines</h4>
+                        <div class="template-item">
+                            <code>Thank you for your time and consideration.</code>
+                            <button class="copy-small" data-copy="Thank you for your time and consideration.">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>I look forward to hearing from you.</code>
+                            <button class="copy-small" data-copy="I look forward to hearing from you.">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>Please feel free to contact me if you need any further information.</code>
+                            <button class="copy-small" data-copy="Please feel free to contact me if you need any further information.">Copy</button>
+                        </div>
+                        <div class="template-item">
+                            <code>I appreciate your prompt attention to this matter.</code>
+                            <button class="copy-small" data-copy="I appreciate your prompt attention to this matter.">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Prepared by: <strong>Artem</strong></p>
+        <p class="footer-note">For educational purposes • University Assignment 2025</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
